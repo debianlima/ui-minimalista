@@ -1,0 +1,6 @@
+upstream: fladmorty1987/ui-minimalista
+upstream_commit: 811c48df847e29c74a1d11c22cbcfb98211a4c48
+fork: debianlima/ui-minimalista
+derivacao: fork_de_projeto_externo
+skill_adicionada_no_fork: skills/ui-minimalista/SKILL.md
+licenca_observada: README declara MIT; arquivo LICENSE ausente no commit de origem
