@@ -4,3 +4,8 @@ fork: debianlima/ui-minimalista
 derivacao: fork_de_projeto_externo
 skill_adicionada_no_fork: skills/ui-minimalista/SKILL.md
 licenca_observada: README declara MIT; arquivo LICENSE ausente no commit de origem
+adaptacoes_fork:
+- arquivo: style.css
+  motivo: corrigir contraste axe no footer
+  evidencia: 'axe color-contrast serious: 1.82:1 preto sobre #343a40; alvo >=4.5:1'
+  mudanca: 'footer color #ffffff'
