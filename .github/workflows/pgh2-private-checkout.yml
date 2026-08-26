@@ -1,0 +1,18 @@
+name: PGH2 Private Checkout Probe
+on:
+  push:
+    branches: [pgh2-executor-20260826]
+permissions:
+  contents: read
+jobs:
+  checkout-pgh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout private PGH candidate
+        uses: actions/checkout@v4
+        with:
+          repository: debianlima/protocolo-governanca-heterogenea
+          ref: pgh-2.0-candidate
+          path: pgh
+      - name: Verify head
+        run: cd pgh && git rev-parse HEAD && python tests/verify_pgh_2_u18_u19_bundle.py
