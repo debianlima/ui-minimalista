@@ -1,0 +1,11 @@
+name: PGH2 Public Executor Probe
+on:
+  push:
+    branches: [pgh2-executor-20260826]
+permissions:
+  contents: read
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo PGH2_PUBLIC_RUNNER_PROBE=PASS
